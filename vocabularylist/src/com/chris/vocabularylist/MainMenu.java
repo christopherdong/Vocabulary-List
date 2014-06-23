@@ -139,6 +139,7 @@ public class MainMenu extends Activity {
             }
         });
         
+        // delete a list stored in sqlite
         btnDeleteList.setOnClickListener(new View.OnClickListener() {
         	 
             @Override
