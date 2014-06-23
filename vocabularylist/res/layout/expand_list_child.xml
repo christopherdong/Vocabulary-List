@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/txt_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_voucher_thumbnail"
+        android:paddingTop="12dp"
+        android:text="type"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt_definition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_type"
+        android:layout_below="@+id/txt_type"
+        android:paddingTop="12dp"
+        android:text="definition"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_definition"
+        android:layout_below="@+id/txt_definition"
+        android:paddingTop="12dp"
+        android:text="example"
+        android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/btn_speak2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/speaker2" />
+
+</RelativeLayout>

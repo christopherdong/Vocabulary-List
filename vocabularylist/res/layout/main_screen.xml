@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvImport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvImport"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etIPAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/etIPAddressHint"
+        android:text="@string/etIPAddress" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btnViewProducts"
+        style="@style/btnStyleShakespeare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="@string/btnViewProducts" />
+
+    <TextView
+        android:id="@+id/tvSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:text="@string/tvSpinner"
+        android:textSize="20sp" />
+
+    <!-- Button to create a new product screen -->
+
+    <Spinner
+        android:id="@+id/spinnerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp" >
+
+        <Button
+            android:id="@+id/btnViewDatabase"
+            style="@style/btnStyleShakespeare"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/btnViewDatabase" />
+
+        <Button
+            android:id="@+id/btnDeleteList"
+            style="@style/btnStyleShakespeare"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/btnDeleteList" />
+    </RelativeLayout>
+
+</LinearLayout>

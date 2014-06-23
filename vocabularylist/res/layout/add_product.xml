@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+	<ScrollView
+	    android:id="@+id/scrollView1"
+	    android:layout_width="match_parent"
+	    android:layout_height="380dp" >
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >
+
+	         <TextView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip"
+		        android:paddingTop="10dip"
+		        android:text="@string/word_"
+		        android:textSize="17sp" />
+	 
+		    <!-- Input Name -->
+		    <EditText android:id="@+id/inputWord"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dip"
+		        android:layout_marginBottom="15dip"
+		        android:singleLine="true"
+		        android:hint="@string/word"
+		        />
+		 
+		    <!-- Word Type Label -->
+		    <TextView android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/word_type_"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip"
+		        android:paddingTop="10dip"
+		        android:textSize="17sp"/>
+		 
+		    <!-- Input word type -->
+		    <EditText android:id="@+id/inputWordType"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dip"
+		        android:layout_marginBottom="15dip"
+		        android:singleLine="true"
+		        android:hint="@string/word_type"/>
+		 
+		    <!-- Definition Label -->
+		    <TextView android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/definition_"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip"
+		        android:paddingTop="10dip"
+		        android:textSize="17sp"/>
+		 
+		    <!-- Input definition -->
+		    <EditText android:id="@+id/inputDefinition"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dip"
+		        android:layout_marginBottom="15dip"
+		        android:lines="2"
+		        android:gravity="top"
+		        android:hint="@string/definition"/>
+		    
+		    <!-- Example Label -->
+		    <TextView android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/example_"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip"
+		        android:paddingTop="10dip"
+		        android:textSize="17sp"/>
+		 
+		    <!-- Input example -->
+	
+		    <EditText
+		        android:id="@+id/inputExample"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dip"
+		        android:layout_marginBottom="100dip"
+		        android:ems="10"
+		        android:gravity="top"
+		        android:lines="4"
+		        android:hint="@string/example">
+	
+	        <requestFocus />
+	    	</EditText>
+	        
+	            <!-- Prevent keyboard from hidding the last editText -->
+			<TextView android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/_n_n_n_n_n_n_n"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:paddingTop="10dip"
+			    android:textSize="17sp"/>
+    
+    	</LinearLayout>
+	</ScrollView>
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="1dp" >
+
+    <!-- Button Create Product -->
+    <Button android:id="@+id/btnCreateProduct"
+        style="@style/btnStyleShakespeare"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_product"/>
+	</RelativeLayout>
+</LinearLayout>

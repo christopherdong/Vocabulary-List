@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- Product id (pid) - will be HIDDEN - used to pass to other activity -->
+
+    <TextView
+        android:id="@+id/pid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvID"
+        android:visibility="gone" />
+
+
+
+    <!-- Name Label -->
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/word"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/wordType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/word_type"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/definition"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/definition"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/example"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/example"
+        android:textSize="17sp" />
+
+</LinearLayout>
