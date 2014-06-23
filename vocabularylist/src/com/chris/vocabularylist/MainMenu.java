@@ -204,6 +204,7 @@ public class MainMenu extends Activity {
     	return listName;
     }
     
+    // each list name will have a unique ID
     public static int getSelectedListID()
     {
     	return listID;
